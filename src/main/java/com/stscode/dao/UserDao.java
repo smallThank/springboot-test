@@ -12,4 +12,6 @@ public interface UserDao extends JpaRepository<User, Integer>, JpaSpecificationE
 
     public abstract List<User> findByNameLike(String name);
 
+    public abstract User findByUid(Integer uid);
+
 }
